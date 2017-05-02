@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#e3e3e3"
+    android:orientation="vertical"
+    tools:context="com.kieboom.joey.avanseventmanager.controllers.performance.CreatePerformanceActivityFragment"
+    tools:showIn="@layout/activity_create_performance">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Create performance"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/create_performance_artist_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/create_performance_area_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+    <EditText
+        android:id="@+id/create_performance_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"/>
+
+    <EditText
+        android:id="@+id/create_performance_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start time"/>
+
+    <EditText
+        android:id="@+id/create_performance_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End time"/>
+
+    <Button
+        android:id="@+id/create_performance_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/positive"
+        android:text="Create performance" />
+
+</LinearLayout>

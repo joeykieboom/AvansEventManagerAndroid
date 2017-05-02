@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#e3e3e3"
+    android:orientation="vertical"
+    tools:context="com.kieboom.joey.avanseventmanager.controllers.artist.EditArtistActivityFragment"
+    tools:showIn="@layout/activity_edit_artist">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Edit artist"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Artist:"/>
+
+    <Spinner
+        android:id="@+id/edit_artist_artist_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+    <LinearLayout
+        android:id="@+id/edit_artist_info_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Artist name"/>
+
+        <EditText
+            android:id="@+id/edit_artist_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Artist description"/>
+
+        <Button
+            android:id="@+id/edit_artist_btn"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/positive"
+            android:text="Edit artist" />
+
+        <Button
+            android:id="@+id/delete_artist_btn"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/negative"
+            android:text="Delete artist" />
+
+    </LinearLayout>
+
+</LinearLayout>

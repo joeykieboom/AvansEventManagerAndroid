@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="#e3e3e3"
+    tools:context="com.kieboom.joey.avanseventmanager.controllers.artist.CreateArtistActivityFragment"
+    tools:showIn="@layout/activity_create_artist">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Create artist"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/create_artist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Artist name"/>
+
+    <EditText
+        android:id="@+id/create_artist_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Artist description"/>
+
+    <Button
+        android:id="@+id/create_artist_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/positive"
+        android:text="Create artist" />
+
+</LinearLayout>

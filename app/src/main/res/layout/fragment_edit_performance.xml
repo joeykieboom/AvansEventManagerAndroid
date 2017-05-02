@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:background="#e3e3e3"
+    tools:context="com.kieboom.joey.avanseventmanager.controllers.performance.EditPerformanceActivityFragment"
+    tools:showIn="@layout/activity_edit_performance">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Edit performance"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Performance:"/>
+
+    <Spinner
+        android:id="@+id/edit_performance_performance_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+    <LinearLayout
+        android:id="@+id/edit_performance_info_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Area:"/>
+
+    <Spinner
+        android:id="@+id/edit_performance_area_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Artist:"/>
+
+    <Spinner
+        android:layout_marginTop="10dp"
+        android:id="@+id/edit_performance_artist_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+
+    <EditText
+        android:id="@+id/edit_performance_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date"/>
+
+    <EditText
+        android:id="@+id/edit_performance_start_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start time"/>
+
+    <EditText
+        android:id="@+id/edit_performance_end_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End time"/>
+
+    <Button
+        android:id="@+id/edit_performance_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/positive"
+        android:text="Edit performance" />
+
+    <Button
+        android:id="@+id/delete_performance_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/negative"
+        android:text="Delete performance" />
+    </LinearLayout>
+</LinearLayout>

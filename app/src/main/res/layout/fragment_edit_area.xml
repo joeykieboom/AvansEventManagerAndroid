@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="#e3e3e3"
+    android:orientation="vertical"
+    tools:context="com.kieboom.joey.avanseventmanager.controllers.area.EditAreaActivityFragment"
+    tools:showIn="@layout/activity_edit_area">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="Edit area"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area:"/>
+
+    <Spinner
+        android:id="@+id/edit_area_area_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"/>
+
+    <LinearLayout
+        android:id="@+id/edit_area_info_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+    <EditText
+        android:id="@+id/edit_area_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Area name"/>
+
+    <EditText
+        android:id="@+id/edit_area_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Area description"/>
+
+    <Button
+        android:id="@+id/edit_area_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/positive"
+        android:text="Edit area" />
+
+    <Button
+        android:id="@+id/delete_area_btn"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/negative"
+        android:text="Delete area" />
+    </LinearLayout>
+</LinearLayout>
